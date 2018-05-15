@@ -1,4 +1,3 @@
-// const MongoClient = require('mongodb').MongoClient;
 const { MongoClient, ObjectID } = require('mongodb');
 
 const mongodbUrl = 'mongodb://localhost:27017/TodoApp';

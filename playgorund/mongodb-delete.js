@@ -49,7 +49,7 @@ MongoClient.connect(mongodbUrl, (err, client) => {
         });
 
     db.collection('Users')
-        .findOneAndDelete({ _id: new ObjectID("5af20e665b2cd78caf7e67dc") })
+        .findOneAndDelete({ _id: new ObjectID('5af20e665b2cd78caf7e67dc') })
         .then((res) => {
             console.log('Delete with ObjectID("5af20e665b2cd78caf7e67dc")', res);
         })

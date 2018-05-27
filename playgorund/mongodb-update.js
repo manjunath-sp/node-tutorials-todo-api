@@ -11,7 +11,7 @@ MongoClient.connect(mongodbUrl, (err, client) => {
 
     db.collection('Users')
         .findOneAndUpdate(
-            { _id: new ObjectID("5af20e665b2cd78caf7e67dc") },
+            { _id: new ObjectID('5af20e665b2cd78caf7e67dc') },
             { $set: { age: 18 } }, { upsert: true, returnNewDocument: true })
         .then((res) => {
             console.log('Updated item with ObjectID("5af20e665b2cd78caf7e67dc")', res);

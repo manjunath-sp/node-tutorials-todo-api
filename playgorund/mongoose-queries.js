@@ -1,5 +1,7 @@
 const { ObjectID } = require('mongodb');
+/* eslint-disable no-unused-vars */
 const { mongoose } = require('./../server/db/mongoose');
+/* eslint-enable no-unused-vars */
 const { Todo } = require('./../server/models/todo');
 
 const { User } = require('./../server/models/user');
@@ -48,5 +50,5 @@ if (!ObjectID.isValid(userId)) {
                 console.log('User not found');
             }
         })
-        .catch((e) => console.error(`Error finding user by ID {userId}`, e));
+        .catch((e) => console.error(`Error finding user by ID ${userId}`, e));
 }
